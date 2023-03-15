@@ -1,3 +1,4 @@
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
 [Host]
 #通用
 router.asus.com = server:system

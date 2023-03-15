@@ -1,0 +1,18 @@
+[Host]
+#通用
+router.asus.com = server:system
+tplogin.cn = server:system
+testflight.apple.com = server:114.114.114.114
+#微信
+dns.weixin.qq.com.cn = server:119.29.29.29
+*.wx.qq.com = server:119.29.29.29
+*.weixin.com = server:119.29.29.29
+*.weixin.qq.com = server:119.29.29.29
+*.qpic.cn = server:119.29.29.29
+*.qlogo.cn = server:119.29.29.29
+*.qq.com = server:119.29.29.29
+*.wechat.com = server:119.29.29.29
+#QQ
+*.gtimg.cn = server:119.29.29.29
+*.idqqimg.com = server:119.29.29.29
+*.tencent.com = server:119.29.29.29

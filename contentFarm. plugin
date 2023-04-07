@@ -1,0 +1,4 @@
+[Mitm]
+hostname = www.google.com,google.com.hk
+[Script]
+http-response ^https?:\/\/(www\.google)(\.\w{2,4}){1,2}\/search\?(?!.*?(apps=)).* script-path=https://limbopro.com/Adguard/contentFarm/surge_contentFarm.js, requires-body=true, timeout=60, tag=surge_contentFarm_6

@@ -1,0 +1,5 @@
+hostname = auth.alipan.com,auth.aliyundrive.com
+
+http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js, requires-body=true, timeout=10, tag=阿里云盘cookie, img-url=https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/aliYunPan.png
+
+cron "3 0 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=60, tag=阿里云盘签到, img-url=https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/aliYunPan.png

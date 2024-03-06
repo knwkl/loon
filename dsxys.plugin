@@ -1,5 +1,5 @@
-#!name=local
-#!desc=local
+#!name=大师兄影视
+#!desc=去广告
 
 [Rewrite]
 ^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/version - reject-200
@@ -9,3 +9,6 @@
 
 [Script]
 http-response ^https:\/\/adservice\.sigmob\.cn\/extconfig script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, requires-body=true, timeout=30, tag=replaceBody, argument=false-%3Etrue
+
+[Mitm]
+hostname = sdk.alibaba.com.ailbaba.me, adservice.sigmob.cn

@@ -1,0 +1,11 @@
+#!name=local
+#!desc=local
+
+[Rewrite]
+^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/version - reject-200
+^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/advert\?position=[^2]+ - reject-200
+^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/top_notice\? - reject-200
+^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/(dsx|xgapp)\.php\/v\d\/(top_notice\?|version|advert\?position=[^2]+) - reject-200
+
+[Script]
+http-response ^https:\/\/adservice\.sigmob\.cn\/extconfig script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, requires-body=true, timeout=30, tag=replaceBody, argument=false-%3Etrue
